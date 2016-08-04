@@ -15,3 +15,7 @@
 ---
  - npm install
  - npm run build
+
+### TODO LIST
+---
+ - [ ] Register User

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import App from './containers/App';
-import Base from './containers/Base';
+import Index from './containers/Index';
 import NotFound from './components/NotFound';
 
 function authenticate(nextState, replaceState) {
@@ -19,7 +19,7 @@ export default class Root extends Component {
     return (
       <Router history={browserHistory}>
         <Route path="/" component={App}>
-          <IndexRoute component={Base} />
+          <IndexRoute component={Index} />
           <Route path="*" component={NotFound} />
         </Route>
       </Router>
